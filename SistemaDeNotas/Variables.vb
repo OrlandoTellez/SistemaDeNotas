@@ -26,8 +26,9 @@ Module Variables
         Dim Seleccionar As Integer
 
         'Cadena de Conexión
-        CAD_CONEXION = "DSN=BD_NOTAS;"
+        CAD_CONEXION = "DSN=NOTAS;"
         CONEXION = New Odbc.OdbcConnection(CAD_CONEXION)
+        'MsgBox(CAD_CONEXION)
         CONEXION.Open()
 
         'Ejecutar consulta

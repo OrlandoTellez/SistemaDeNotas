@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B0AEC8B4-A003-473C-9C9D-C320A852B8C7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>SistemaDeNotas.Frm_Principal</StartupObject>
+    <StartupObject>SistemaDeNotas.Frm_Inicio</StartupObject>
     <RootNamespace>SistemaDeNotas</RootNamespace>
     <AssemblyName>SistemaDeNotas</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -79,6 +79,18 @@
     <Compile Include="Frm_Encabezado.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_Inicio.Designer.vb">
+      <DependentUpon>Frm_Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_Menu.Designer.vb">
       <DependentUpon>Frm_Menu.vb</DependentUpon>
     </Compile>
@@ -120,6 +132,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Frm_Encabezado.resx">
       <DependentUpon>Frm_Encabezado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Inicio.resx">
+      <DependentUpon>Frm_Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Menu.resx">
       <DependentUpon>Frm_Menu.vb</DependentUpon>
