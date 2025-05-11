@@ -13,26 +13,17 @@
     End Sub
 
     Private Sub Btn_Ok_Click(sender As Object, e As EventArgs) Handles Btn_Ok.Click
-        'Verificando Datos
         On Error GoTo HORROR
 
         If Txt_Login.Text = "" Or Txt_Password.Text = "" Then
             MessageBox.Show("Debe de digitar el Usuario o el Password!!!", SISTEMA,
-                            MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        MessageBoxButtons.OK, MessageBoxIcon.Information)
             Exit Sub
         End If
 
-        'Accesando al Sistema
         CONSULTA = "SELECT Usuario,Nombre_Usuario,Tipo_Usuario FROM Usuarios " &
-           "WHERE (Usuario = '" & Txt_Login.Text.Trim() & "') AND (Clave = '" & Txt_Password.Text.Trim() & "') AND (Activo = 1)"
-        'MsgBox("Consulta enviada: " & CONSULTA)
+               "WHERE (Usuario = '" & Txt_Login.Text.Trim() & "') AND (Clave = '" & Txt_Password.Text.Trim() & "') AND (Activo = 1)"
         RS_CONSULTA = Variables.Consulta_Segura(CONSULTA, RS_CONSULTA)
-
-        'CONSULTA = "SELECT COUNT(*) FROM Usuarios"
-        'RS_CONSULTA = Consulta_Segura(CONSULTA, RS_CONSULTA)
-        'If RS_CONSULTA.Read() Then
-        'MessageBox.Show("Total usuarios: " & RS_CONSULTA.GetInt32(0).ToString())
-        'End If
 
         If RS_CONSULTA.HasRows = True Then
             RS_CONSULTA.Read()
@@ -42,23 +33,20 @@
             Call Variables.Cierra_Conexion()
             RS_CONSULTA.Close()
 
-            'Control del Tiempo
-            Dim I As Integer = 0
+            ' Mostrar progreso
             Pb_Tiempo.Visible = True
-            Pb_Tiempo.Maximum = 1000
+            Pb_Tiempo.Minimum = 0
+            Pb_Tiempo.Maximum = 10
+            Pb_Tiempo.Value = 0
 
-            Do While I <= Pb_Tiempo.Maximum
-                Pb_Tiempo.Value = I
-                I += 1
-            Loop
+            Timer1.Interval = 30 ' puedes ajustar la velocidad
+            Timer1.Start()
 
-            Pb_Tiempo.Visible = False
-            Frm_Principal.Show()
-            Dispose()
-
+            ' NO llamar a Dispose aquí
+            ' Se hará cuando termine el progreso
         Else
             MessageBox.Show("Cuenta de Acceso No Existe o está de Baja!!!", SISTEMA,
-                            MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        MessageBoxButtons.OK, MessageBoxIcon.Information)
             Txt_Login.Text = ""
             Txt_Password.Text = ""
             Txt_Password.UseSystemPasswordChar = True
@@ -69,7 +57,7 @@
 
 HORROR:
         MessageBox.Show("Datos Incorrectos de la Cuenta de Acceso!!!", SISTEMA,
-                        MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBoxButtons.OK, MessageBoxIcon.Information)
         Txt_Login.Text = ""
         Txt_Password.Text = ""
         Txt_Login.Focus()
@@ -100,4 +88,16 @@ HORROR:
         End If
     End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If Pb_Tiempo.Value < Pb_Tiempo.Maximum Then
+            Pb_Tiempo.Value += 1
+        Else
+            Timer1.Stop()
+            Pb_Tiempo.Visible = False
+
+            ' Mostrar el siguiente formulario y cerrar este
+            Frm_Principal.Show()
+            Me.Dispose()
+        End If
+    End Sub
 End Class

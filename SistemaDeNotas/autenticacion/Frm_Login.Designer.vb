@@ -22,6 +22,7 @@ Partial Class Frm_Login
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_Login))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Btn_Cerrar = New System.Windows.Forms.Button()
@@ -36,6 +37,7 @@ Partial Class Frm_Login
         Me.Txt_Password = New System.Windows.Forms.TextBox()
         Me.Pb_Tiempo = New System.Windows.Forms.ProgressBar()
         Me.Btn_Ok = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -166,6 +168,9 @@ Partial Class Frm_Login
         Me.Btn_Ok.Text = "ENTRAR"
         Me.Btn_Ok.UseVisualStyleBackColor = False
         '
+        'Timer1
+        '
+        '
         'Frm_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -208,4 +213,5 @@ Partial Class Frm_Login
     Friend WithEvents Pb_Tiempo As ProgressBar
     Friend WithEvents Btn_Ok As Button
     Friend WithEvents Btn_Cerrar As Button
+    Friend WithEvents Timer1 As Timer
 End Class
