@@ -108,6 +108,9 @@
     <EmbeddedResource Include="Frm_Encabezado.resx">
       <DependentUpon>Frm_Encabezado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Piedepagina.resx">
+      <DependentUpon>Frm_Piedepagina.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Principal.resx">
       <DependentUpon>Frm_Principal.vb</DependentUpon>
     </EmbeddedResource>

@@ -13,8 +13,8 @@
         'Frm_Presentacion.Show()
 
         'visualizando el formulario pie de página
-        'Frm_Piedepagina.MdiParent = Me
-        'Frm_Piedepagina.Show()
+        Frm_Piedepagina.MdiParent = Me
+        Frm_Piedepagina.Show()
 
         'Me.Text = SISTEMA
         'Me.Stb_Barra_Estado.Items(0).Text = Space(0) & "USUARIO: " & LOGIN_USER & Space(15) &
