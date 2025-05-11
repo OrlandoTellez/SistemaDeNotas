@@ -25,4 +25,8 @@
         principal.CambiarFormularioCentral(New Frm_Usuarios())
     End Sub
 
+    Private Sub Btn_Alumnos_Click(sender As Object, e As EventArgs) Handles Btn_Alumnos.Click
+        Dim principal As Frm_Principal = CType(Me.MdiParent, Frm_Principal)
+        principal.CambiarFormularioCentral(New Frm_Alumnos())
+    End Sub
 End Class

@@ -7,7 +7,7 @@
             Timer1.Stop()
             Pb_Tiempo.Visible = False
 
-            ' Aquí puedes abrir el siguiente formulario o cerrar el actual
+            ' abrir el siguiente formulario
             Timer1.Stop()
             Timer1.Enabled = False
             Me.Hide()
@@ -17,7 +17,7 @@
     Private Sub Frm_Inicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Pb_Tiempo.Visible = True
         Pb_Tiempo.Minimum = 0
-        Pb_Tiempo.Maximum = 100
+        Pb_Tiempo.Maximum = 50
         Pb_Tiempo.Value = 0
 
         Timer1.Interval = 1 ' Intervalo de 1 milisegundo
