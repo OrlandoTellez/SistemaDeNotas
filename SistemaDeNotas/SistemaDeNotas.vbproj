@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_Encabezado.Designer.vb">
+    <Compile Include="componentes\Frm_Encabezado.Designer.vb">
       <DependentUpon>Frm_Encabezado.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Encabezado.vb">
+    <Compile Include="componentes\Frm_Encabezado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Inicio.Designer.vb">
@@ -85,28 +85,28 @@
     <Compile Include="Frm_Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Login.Designer.vb">
+    <Compile Include="autenticacion\Frm_Login.Designer.vb">
       <DependentUpon>Frm_Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Login.vb">
+    <Compile Include="autenticacion\Frm_Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Menu.Designer.vb">
+    <Compile Include="componentes\Frm_Menu.Designer.vb">
       <DependentUpon>Frm_Menu.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Menu.vb">
+    <Compile Include="componentes\Frm_Menu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Piedepagina.Designer.vb">
+    <Compile Include="componentes\Frm_Piedepagina.Designer.vb">
       <DependentUpon>Frm_Piedepagina.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Piedepagina.vb">
+    <Compile Include="componentes\Frm_Piedepagina.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Presentacion.Designer.vb">
+    <Compile Include="formularios\Frm_Presentacion.Designer.vb">
       <DependentUpon>Frm_Presentacion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Presentacion.vb">
+    <Compile Include="formularios\Frm_Presentacion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Principal.vb">
@@ -116,10 +116,10 @@
       <DependentUpon>Frm_Principal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Usuarios.Designer.vb">
+    <Compile Include="formularios\Frm_Usuarios.Designer.vb">
       <DependentUpon>Frm_Usuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Usuarios.vb">
+    <Compile Include="formularios\Frm_Usuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -133,31 +133,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Variables.vb" />
+    <Compile Include="db\Variables.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Frm_Encabezado.resx">
+    <EmbeddedResource Include="componentes\Frm_Encabezado.resx">
       <DependentUpon>Frm_Encabezado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Inicio.resx">
       <DependentUpon>Frm_Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Login.resx">
+    <EmbeddedResource Include="autenticacion\Frm_Login.resx">
       <DependentUpon>Frm_Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Menu.resx">
+    <EmbeddedResource Include="componentes\Frm_Menu.resx">
       <DependentUpon>Frm_Menu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Piedepagina.resx">
+    <EmbeddedResource Include="componentes\Frm_Piedepagina.resx">
       <DependentUpon>Frm_Piedepagina.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Presentacion.resx">
+    <EmbeddedResource Include="formularios\Frm_Presentacion.resx">
       <DependentUpon>Frm_Presentacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Principal.resx">
       <DependentUpon>Frm_Principal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Usuarios.resx">
+    <EmbeddedResource Include="formularios\Frm_Usuarios.resx">
       <DependentUpon>Frm_Usuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -181,5 +181,6 @@
   <ItemGroup>
     <None Include="Resources\LOGO-UNICIT.jpeg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
