@@ -115,6 +115,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Frm_Encabezado.resx">

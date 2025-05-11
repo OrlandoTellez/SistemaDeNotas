@@ -12,9 +12,6 @@
 
     End Sub
     Private Sub Btn_Cerrar_Click(sender As Object, e As EventArgs) Handles Btn_Cerrar.Click
-        Const SISTEMA As String = "Sistema"
-        Dim Respuesta As DialogResult
-
         'Cerrando la aplicacion
         Respuesta = MessageBox.Show("¿Desea Salir del Sistema?", SISTEMA, MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If (Respuesta = vbYes) Then

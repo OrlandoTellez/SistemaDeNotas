@@ -1,6 +1,5 @@
 ﻿Public Class Frm_Principal
     ' Variables de usuario y sistema
-    Private SISTEMA As String = "Sistema de Gestión"
     Private LOGIN_USER As String = "usuario01"
     Private NOMBRE_USER As String = "Juan Pérez"
     Private TIPO_USER As String = "Administrador"
