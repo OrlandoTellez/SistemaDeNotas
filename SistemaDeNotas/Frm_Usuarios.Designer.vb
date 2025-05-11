@@ -76,7 +76,7 @@ Partial Class Frm_Usuarios
         Me.btn_cerrar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_cerrar.FlatAppearance.BorderSize = 0
         Me.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cerrar.Location = New System.Drawing.Point(755, 12)
+        Me.btn_cerrar.Location = New System.Drawing.Point(756, 17)
         Me.btn_cerrar.Name = "btn_cerrar"
         Me.btn_cerrar.Size = New System.Drawing.Size(261, 40)
         Me.btn_cerrar.TabIndex = 23
@@ -350,7 +350,7 @@ Partial Class Frm_Usuarios
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1028, 659)
+        Me.ClientSize = New System.Drawing.Size(1044, 600)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)

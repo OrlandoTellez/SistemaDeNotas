@@ -33,4 +33,19 @@
         End If
     End Sub
 
+    Public Sub CambiarFormularioCentral(nuevoFormulario As Form)
+        ' Cierra todos los formularios hijos excepto encabezado, menú y pie de página
+        For Each child As Form In Me.MdiChildren
+            If Not (TypeOf child Is Frm_Encabezado OrElse
+                    TypeOf child Is Frm_Menu OrElse
+                    TypeOf child Is Frm_Piedepagina) Then
+                child.Close()
+            End If
+        Next
+
+        ' Mostrar el nuevo formulario como hijo MDI
+        nuevoFormulario.MdiParent = Me
+        nuevoFormulario.Show()
+    End Sub
+
 End Class

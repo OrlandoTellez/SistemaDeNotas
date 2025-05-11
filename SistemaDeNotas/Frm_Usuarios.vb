@@ -2,6 +2,14 @@
 
 Public Class Frm_Usuarios
 
+    Protected Overrides Sub WndProc(ByRef m As System.Windows.Forms.Message)
+        MyBase.WndProc(m)
+        Const WM_MOVE As Int32 = &H3
+        Select Case m.Msg
+            Case WM_MOVE
+                Me.Location = New Point(316, 71)
+        End Select
+    End Sub
     Private Sub Frm_Usuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TablaClientes()
         CargarDatos() ' Cargar los datos al iniciar el formulario
@@ -86,8 +94,13 @@ Public Class Frm_Usuarios
     End Sub
 
     Private Sub btn_cerrar_Click(sender As Object, e As EventArgs) Handles btn_cerrar.Click
-        Dim Frm_Principal As New Frm_Principal
-        Frm_Principal.Show()
-        Close()
+        ' Guardar referencia al formulario principal ANTES de cerrar
+        Dim principal As Frm_Principal = CType(Me.MdiParent, Frm_Principal)
+
+        Me.Close()
+
+        ' Luego cambiar el formulario central
+        principal.CambiarFormularioCentral(New Frm_Presentacion())
+
     End Sub
 End Class
