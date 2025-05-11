@@ -18,4 +18,28 @@
             Application.Exit()
         End If
     End Sub
+
+    ' Botón para registrar usuarios
+    Private Sub Btn_RegistrarUsuarios_Click(sender As Object, e As EventArgs) Handles Btn_RegistrarUsuarios.Click
+        ' Crear y mostrar el formulario de usuarios
+        Dim Frm_Usuarios As New Frm_Usuarios
+        Frm_Usuarios.Show()
+
+        ' Cerrar el formulario principal después de ocultar los formularios hijos
+        CloseMainForm()
+    End Sub
+
+    ' Método para cerrar el formulario principal
+    Private Sub CloseMainForm()
+        ' cerrar todos los formularios hijos MDI
+        For Each childForm As Form In Me.MdiChildren
+            childForm.Close()
+        Next
+
+        ' Cerrar el formulario principal
+        Dim parentForm As Form = Me.MdiParent
+        If parentForm IsNot Nothing Then
+            parentForm.Close()
+        End If
+    End Sub
 End Class
