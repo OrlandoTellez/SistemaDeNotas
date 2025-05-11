@@ -5,8 +5,8 @@
         Frm_Encabezado.Show()
 
         'visualizando el formulario menú
-        'Frm_Menu.MdiParent = Me
-        'Frm_Menu.Show()
+        Frm_Menu.MdiParent = Me
+        Frm_Menu.Show()
 
         'Visualizando el Formulario Presentación
         'Frm_Presentacion.MdiParent = Me
