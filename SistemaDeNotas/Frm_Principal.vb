@@ -9,8 +9,8 @@
         Frm_Menu.Show()
 
         'Visualizando el Formulario Presentación
-        'Frm_Presentacion.MdiParent = Me
-        'Frm_Presentacion.Show()
+        Frm_Presentacion.MdiParent = Me
+        Frm_Presentacion.Show()
 
         'visualizando el formulario pie de página
         Frm_Piedepagina.MdiParent = Me

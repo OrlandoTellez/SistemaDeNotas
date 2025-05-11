@@ -91,6 +91,12 @@
     <Compile Include="Frm_Piedepagina.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_Presentacion.Designer.vb">
+      <DependentUpon>Frm_Presentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Presentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_Principal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Piedepagina.resx">
       <DependentUpon>Frm_Piedepagina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Presentacion.resx">
+      <DependentUpon>Frm_Presentacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Principal.resx">
       <DependentUpon>Frm_Principal.vb</DependentUpon>
