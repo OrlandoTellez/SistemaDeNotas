@@ -5,7 +5,7 @@ DOCUMENTACION PARA CONECTARME EN OBDC MI BASE DE DATOS A MI PROYECTO:
 3- elegir origenes de datos obdc( ahi escoger dependiendo del proyecto si es de 32 bits o de 64 bits, eso se ve en las propiedades del proyecto en visual studio, ir a propiedades y elegir compilar) 
 4- Ir a DSN DEL SISTEMA y darle a agregar
 5- Buscar el controlador de sql server(se puede encontrar como   ODBC DRIVER 17 for sql server, si no esta escoger sql server)
-6- llenar los datos  como el nombre y el servidor, poner localhost o el servidor de sqlserver
+6- llenar los datos  como el nombre y el servidor, la base de datos a la cual nos vamos a conectar, poner localhost o el servidor de sqlserver
 7- darle a siguiente y autenticacion con window, de ahi darle a siguiente hasta probar la conexion
 
 En sql al crear la base de datos hay que almacenarla en C:
