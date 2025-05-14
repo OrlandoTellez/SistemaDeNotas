@@ -76,11 +76,11 @@ Partial Class Frm_Usuarios
         Me.btn_cerrar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_cerrar.FlatAppearance.BorderSize = 0
         Me.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cerrar.Location = New System.Drawing.Point(756, 17)
+        Me.btn_cerrar.Image = CType(resources.GetObject("btn_cerrar.Image"), System.Drawing.Image)
+        Me.btn_cerrar.Location = New System.Drawing.Point(953, 12)
         Me.btn_cerrar.Name = "btn_cerrar"
-        Me.btn_cerrar.Size = New System.Drawing.Size(261, 40)
-        Me.btn_cerrar.TabIndex = 23
-        Me.btn_cerrar.Text = "Cerrar"
+        Me.btn_cerrar.Size = New System.Drawing.Size(45, 40)
+        Me.btn_cerrar.TabIndex = 24
         Me.btn_cerrar.UseVisualStyleBackColor = False
         '
         'Label1
@@ -412,7 +412,6 @@ Partial Class Frm_Usuarios
     Friend WithEvents Label6 As Label
     Friend WithEvents txtPass As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents btn_cerrar As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents cb_tipoUsu As ComboBox
@@ -423,4 +422,5 @@ Partial Class Frm_Usuarios
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents btn_cerrar As Button
 End Class

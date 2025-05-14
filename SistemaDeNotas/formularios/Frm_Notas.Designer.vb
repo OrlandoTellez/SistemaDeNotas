@@ -22,9 +22,16 @@ Partial Class Frm_Notas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'Frm_Notas
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1028, 561)
+        Me.Name = "Frm_Notas"
         Me.Text = "Frm_Notas"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

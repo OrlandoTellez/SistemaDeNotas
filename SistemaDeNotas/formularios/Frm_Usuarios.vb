@@ -93,7 +93,7 @@ Public Class Frm_Usuarios
         End Try
     End Sub
 
-    Private Sub btn_cerrar_Click(sender As Object, e As EventArgs) Handles btn_cerrar.Click
+    Private Sub btn_cerrar_Click(sender As Object, e As EventArgs)
         ' Guardar referencia al formulario principal ANTES de cerrar
         Dim principal As Frm_Principal = CType(Me.MdiParent, Frm_Principal)
 
@@ -102,5 +102,15 @@ Public Class Frm_Usuarios
         ' Luego cambiar el formulario central
         principal.CambiarFormularioCentral(New Frm_Presentacion())
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_cerrar.Click
+        ' Guardar referencia al formulario principal ANTES de cerrar
+        Dim principal As Frm_Principal = CType(Me.MdiParent, Frm_Principal)
+
+        Me.Close()
+
+        ' Luego cambiar el formulario central
+        principal.CambiarFormularioCentral(New Frm_Presentacion())
     End Sub
 End Class
