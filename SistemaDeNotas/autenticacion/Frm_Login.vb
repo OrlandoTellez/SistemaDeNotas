@@ -39,11 +39,9 @@
             Pb_Tiempo.Maximum = 10
             Pb_Tiempo.Value = 0
 
-            Timer1.Interval = 30 ' puedes ajustar la velocidad
+            Timer1.Interval = 30
             Timer1.Start()
 
-            ' NO llamar a Dispose aquí
-            ' Se hará cuando termine el progreso
         Else
             MessageBox.Show("Cuenta de Acceso No Existe o está de Baja!!!", SISTEMA,
                         MessageBoxButtons.OK, MessageBoxIcon.Information)
