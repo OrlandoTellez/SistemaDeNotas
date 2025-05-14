@@ -32,7 +32,7 @@ Partial Class Frm_Menu
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Btn_Alumnos = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Btn_Notas = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Btn_RegistrarUsuarios = New System.Windows.Forms.Button()
@@ -131,17 +131,17 @@ Partial Class Frm_Menu
         Me.Btn_Alumnos.Text = "REGISTRAR ALUMNOS"
         Me.Btn_Alumnos.UseVisualStyleBackColor = False
         '
-        'Button1
+        'Btn_Notas
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(31, 134)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(169, 23)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "REGISTRO DE NOTAS"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Btn_Notas.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_Notas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Notas.ForeColor = System.Drawing.Color.White
+        Me.Btn_Notas.Location = New System.Drawing.Point(31, 134)
+        Me.Btn_Notas.Name = "Btn_Notas"
+        Me.Btn_Notas.Size = New System.Drawing.Size(169, 23)
+        Me.Btn_Notas.TabIndex = 9
+        Me.Btn_Notas.Text = "REGISTRO DE NOTAS"
+        Me.Btn_Notas.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -201,7 +201,7 @@ Partial Class Frm_Menu
         Me.Controls.Add(Me.Btn_RegistrarUsuarios)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Btn_Notas)
         Me.Controls.Add(Me.Btn_Alumnos)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
@@ -232,7 +232,7 @@ Partial Class Frm_Menu
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Btn_Alumnos As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Btn_Notas As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Btn_RegistrarUsuarios As Button

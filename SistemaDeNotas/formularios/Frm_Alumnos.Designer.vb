@@ -170,7 +170,7 @@ Partial Class Frm_Alumnos
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.Panel1.Controls.Add(Me.btn_cerrar)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -195,6 +195,7 @@ Partial Class Frm_Alumnos
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(17, 17)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(361, 35)
@@ -441,6 +442,7 @@ Partial Class Frm_Alumnos
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Frm_Alumnos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frm_Alumnos"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

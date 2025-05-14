@@ -29,4 +29,9 @@
         Dim principal As Frm_Principal = CType(Me.MdiParent, Frm_Principal)
         principal.CambiarFormularioCentral(New Frm_Alumnos())
     End Sub
+
+    Private Sub Btn_Notas_Click(sender As Object, e As EventArgs) Handles Btn_Notas.Click
+        Dim principal As Frm_Principal = CType(Me.MdiParent, Frm_Principal)
+        principal.CambiarFormularioCentral(New Frm_Notas())
+    End Sub
 End Class
